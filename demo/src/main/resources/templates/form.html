@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+	<form th:action="@{/addPerson}" th:object="${personForm}" method="POST">
+        Name: <input type="text" name="name" id="name"/>
+        Age: <input type="text" name="age" id="age">
+        <input type="submit" value="Create">
+    </form>
+
+    <div th:if="${errorMessage}" th:text="${errorMessage}" style="color:red; font-size: italic;">
+
+    </div>
+</body>
+</html>
