@@ -9,10 +9,7 @@
 <title>Spring Data Jpa</title>
 </head>
 <body>
-	<h3>Index</h3> 	<!-- SessionFlash trong controller -->
-	<h4>${msg}</h4>
-	<a href="${pageContext.request.contextPath }/product/add">Add product</a>
-
+	<h3>Index</h3>
 	<table border="1">
 		<tr>
 			<td>Id</td>
@@ -22,11 +19,7 @@
 			<td>Status</td>
 			<td>Created</td>
 			<td>Description</td>
-			<td>Edit</td>
-			<td>Delete</td>
-			
 		</tr>
-		<c:forEach var="product" items="${products}">
 		<tr>
 			<td>${product.id}</td>
 			<td>${product.name}</td>
@@ -37,14 +30,7 @@
 				<fmt:formatDate value="${product.created}" pattern="dd/MM/yyyy"/>	
 			</td>
 			<td>${product.description}</td>
-			<td>
-				<a href="${pageContext.request.contextPath }/product/edit/${product.id}">Edit</a>
-			</td>
-			<td>
-				<a href="${pageContext.request.contextPath }/product/delete/${product.id}">Delete</a>
-			</td>
 		</tr>
-	</c:forEach>
 	</table>
 	
 </body>
