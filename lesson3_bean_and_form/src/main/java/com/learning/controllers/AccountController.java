@@ -9,6 +9,8 @@ import java.util.Date;
 import java.util.UUID;
 import java.util.stream.Collectors;
 
+import javax.servlet.ServletContext;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
@@ -26,7 +28,6 @@ import com.learning.services.CertService;
 import com.learning.services.LanguageService;
 import com.learning.services.RoleService;
 
-import jakarta.servlet.ServletContext;
 
 @Controller
 @RequestMapping({"", "account"})
@@ -41,7 +42,7 @@ public class AccountController implements ServletContextAware{
 	@Autowired
 	private RoleService roleService;
 	
-	private ServletContext servletContext;
+	private javax.servlet.ServletContext servletContext;
 	
 	@GetMapping({"/", "/register"})
 	public String register(ModelMap modelMap) {
