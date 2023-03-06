@@ -4,7 +4,6 @@ import java.util.UUID;
 
 import javax.servlet.http.HttpSession;
 
-import org.aspectj.weaver.NewConstructorTypeMunger;
 import org.mindrot.jbcrypt.BCrypt;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.core.env.Environment;
