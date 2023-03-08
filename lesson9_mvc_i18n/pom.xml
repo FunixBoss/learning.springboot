@@ -9,9 +9,9 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.learning</groupId>
-	<artifactId>lesson8_mvc</artifactId>
+	<artifactId>lesson9_mvc_i18n</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>lesson8_mvc</name>
+	<name>lesson9_mvc_i18n</name>
 	<description>Demo project for Spring Boot</description>
 	<properties>
 		<java.version>17</java.version>
@@ -83,4 +83,5 @@
 			</plugin>
 		</plugins>
 	</build>
+
 </project>
