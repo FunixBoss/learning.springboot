@@ -1,8 +1,6 @@
 package com.learning.controllers.user;
 
-import java.util.Collection;
 import java.util.Date;
-import java.util.HashSet;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.Authentication;

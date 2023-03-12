@@ -7,9 +7,9 @@ import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 
 import com.learning.interceptors.AdminInterceptor;
 import com.learning.interceptors.Log1Interceptor;
-import com.learning.interceptors.Log2Interceptor;
 import com.learning.interceptors.Log3Interceptor;
 import com.learning.interceptors.Log4Interceptor;
+import com.learning.interceptors.RequestInfoInterceptor;
 import com.learning.interceptors.SecurityInterceptor;
 
 @Configuration
@@ -19,7 +19,7 @@ public class InterceptorConfiguration implements WebMvcConfigurer{
 	private Log1Interceptor log1Interceptor;
 	
 	@Autowired
-	private Log2Interceptor log2Interceptor;
+	private RequestInfoInterceptor requestInfoInterceptor;
 	
 	@Autowired
 	private Log3Interceptor log3Interceptor;
@@ -39,7 +39,7 @@ public class InterceptorConfiguration implements WebMvcConfigurer{
 	//		registry.addInterceptor(log1Interceptor);
 	//		// nếu securityInterceptor.addInterceptors = false thì sẽ ko chạy qua các interceptor tiếp theo
 	//		registry.addInterceptor(securityInterceptor); 
-	//		registry.addInterceptor(log2Interceptor);
+	//		registry.addInterceptor(requestInfoInterceptor);
 	//		registry.addInterceptor(log3Interceptor);
 	//		
 	//		// chi zo 1 so page nhat dinh
